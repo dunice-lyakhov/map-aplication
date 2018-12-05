@@ -1,0 +1,1 @@
+virtualenv -p python3 .ve && source .ve/bin/activate && pip install -r requirements.txt && ./manage.py migrate && ./manage.py runserver 0.0.0.0:8000

@@ -1,0 +1,21 @@
+{% load staticfiles i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map</title>
+    <link href="{% static 'css/map_main.css' %}" rel='stylesheet'>
+</head>
+<body>
+    <div id="map-container"></div>
+    <div class="list-container">
+        <div class="reset-button-container"><button class="reset-button">RESET</button></div>
+        <div class="list-address"></div>
+    </div>
+
+    <script src="{% static 'js/libs/jquery-3.2.1.min.js' %}" defer></script>
+    <script src="{% static 'js/map_main.js' %}" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB058P5TVrnaTfRoXt0Jlrpu9nDGrQ69DU&callback=initMap" defer></script>
+</body>
+</html>
